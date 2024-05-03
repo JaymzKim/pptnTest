@@ -1,0 +1,64 @@
+.table_summury_wrap {
+    position: relative;
+    padding:0 16px;
+}
+.table_summury_wrap .header {
+    position: relative;
+    padding: 21px 0 21px 28px;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.table_summury_wrap .header[aria-label="상품별매출내역"]::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    margin-top: -11px;
+    background-image: url(../public/images/sales_title_icon_01.svg);
+}
+.table_summury_wrap .header[aria-label="이실장영업실적"]::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    margin-top: -11px;
+    background-image: url(../public/images/sales_title_icon_02.svg);
+}
+.table_summury_wrap .table_wrap {
+    padding-top: 10px;
+}
+.table_summury_wrap .table_wrap table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0px;
+}
+.table_summury_wrap .table_wrap table th {
+    height: 28px;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: #ebeaea;
+    border-bottom: 1px solid #2e3233;
+}
+.table_summury_wrap .table_wrap table td {
+    height: 28px;
+    font-size: 12px;
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 1px solid #ebeaea;
+}
+.table_summury_wrap .table_wrap table tr:last-child td {
+    border-bottom: 1px solid #707070;
+}
+.table_summury_wrap .table_wrap table .premium td {
+    border-bottom: 1px solid #c2c1c1;
+}
+.table_summury_wrap .table_wrap table .total td {
+    font-weight: 700;
+    border-bottom: 1px solid #555;
+}

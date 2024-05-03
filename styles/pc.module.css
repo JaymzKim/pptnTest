@@ -1,0 +1,200 @@
+.pc_wrap {
+    min-width: 1260px;
+}
+.list_wrap {
+    width: 1194px;
+    margin: 0 auto;
+}
+.list_wrap .list_title {
+    padding: 80px 0 20px;
+    font-size: 34px;
+    text-align: center;
+}
+.list_wrap .list_title .title {
+    font-weight: 700;
+}
+.list_wrap .list_contents {
+    position: relative;
+}
+.list_wrap .list_header {
+    position: relative;
+    min-height: 60px;
+    padding: 10px 0;
+}
+.list_wrap .list_header .filter_wrap {
+    display: flex;
+}
+.list_wrap .list_header .search_box {
+    display: flex;
+}
+.list_wrap .list_header .input_box {
+    position: relative;
+    width: 240px;
+    height: 40px;
+    border: 1px solid #c2c1c1;
+    border-radius: 6px;
+}
+.list_wrap .list_header .input_box::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 11px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../public/images/search_icon_02.svg);
+}
+.list_wrap .list_header .input_box input {
+    width: 186px;
+    height: 24px;
+    padding: 7px 11px 7px 41px;
+    font-size: 16px;
+}
+.list_wrap .list_header .search_btn {
+    width: 52px;
+    height: 40px;
+    margin-left: 8px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #e95c20;
+    border-radius: 6px;
+}
+.list_wrap .list_header .write {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    height: 40px;
+    padding: 8px 12px 8px 40px;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    border: 1px solid #c2c1c1;
+    border-radius: 6px;
+}
+.list_wrap .list_header .write::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    background-image: url(../public/images/write_icon_01.svg);
+}
+.list_contents .table_wrap table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0px;
+}
+.list_contents .table_wrap table th {
+    height: 52px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #ebeaea;
+    border-bottom: 1px solid #707070;
+}
+.list_contents .table_wrap table td {
+    height: 60px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 1px solid #ebeaea;
+}
+.list_contents .table_wrap .no_data {
+    padding: 100px 0;
+    color: #707070;
+    font-size: 16px;
+}
+.list_contents .table_wrap table td.title {
+    text-align: left;
+}
+.pagination_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    font-size: 16px;
+}
+.pagination_wrap .prev {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    padding-right: 10px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+.pagination_wrap .prev::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../public/images/arrow_left_icon_01.svg);
+    background-size: 9px 17px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.pagination_wrap .prev::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 0;
+    bottom: 5px;
+    width: 1px;
+    background-color: #ebeaea;
+}
+.pagination_wrap .page {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    text-decoration: none;
+}
+.pagination_wrap .page:hover, .pagination_wrap .page[aria-selected="true"] {
+    color: #e95c20;
+}
+.pagination_wrap .page:hover::after, .pagination_wrap .page[aria-selected="true"]::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid #c2c1c1;
+}
+.pagination_wrap .next {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    padding-left: 10px;
+    margin-left: 5px;
+    text-decoration: none;
+}
+.pagination_wrap .next::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    transform: rotate(180deg);
+    background-image: url(../public/images/arrow_left_icon_01.svg);
+    background-size: 9px 17px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.pagination_wrap .next::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    bottom: 5px;
+    width: 1px;
+    background-color: #ebeaea;
+}

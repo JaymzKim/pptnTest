@@ -1,0 +1,214 @@
+.modal_wrap {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    background-color: rgba(46, 50, 51, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+@media (prefers-color-scheme: dark) {
+    .modal_wrap {
+        background-color: rgba(91, 112, 131, 0.4);
+    }
+}
+.modal_body {
+    position: relative;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    min-width: 800px;
+    height: 458px;
+    margin-top: -229px;
+    background-color: #fff;
+    border: 1px solid #ebeaea;
+}
+.modal_body .header {
+    height: 44px;
+    line-height: 44px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    border-bottom: 1px solid #ebeaea;
+}
+
+.modal_body .contents {
+    height: 414px;
+    padding-bottom: 25px;
+    overflow: auto;
+}
+.write_form {
+    padding: 25px 0;
+}
+.write_form .input_div {
+    position: relative;
+    padding: 5px 30px 5px 156px;
+    font-size: 20px;
+}
+.write_form .input_div .input_label {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.write_form .input_div .select_box {
+    position: relative;
+    z-index: 3;
+    display: inline-block;
+    margin-right: 4px;
+}
+.write_form .input_div .select_box>button {
+    position: relative;
+    height: 32px;
+    padding: 0 32px 0 12px;
+    font-size: 20px;
+    border: 1px solid #c2c1c1;
+}
+.write_form .input_div .select_box>button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    width: 10px;
+    height: 8px;
+    margin-top: -4px;
+    background-image: url(../public/images/arrow_down_icon_01.svg);
+}
+.select_box .select_box_list {
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ebeaea;
+}
+.select_box>button[aria-selected="true"]+.select_box_list {
+    display: block;
+}
+.select_box .select_box_list li {
+    padding: 4px 12px;
+    line-height: 24px;
+    cursor: pointer;
+}
+.select_box .select_box_list li:not(:first-child) {
+    border-top: 1px solid #ebeaea;
+}
+.select_box .select_box_list li:hover {
+    background-color: #ebeaea;
+}
+.write_form .input_div .input_title {
+    width: 614px;
+    height: 32px;
+    padding: 0 12px;
+    font-size: 20px;
+    border: 1px solid #c2c1c1;
+    box-sizing: border-box;
+}
+.write_form .input_div .textarea {
+    width: 614px;
+    height: 96px;
+    padding: 4px 12px;
+    line-height: 27px;
+    font-size: 20px;
+    border: 1px solid #c2c1c1;
+    box-sizing: border-box;
+}
+.write_form .input_div .checkbox_wrap input {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+.write_form .input_div .checkbox_wrap .checkbox_label {
+    position: relative;
+    padding-left: 30px;
+    line-height: 24px;
+    font-size: 20px;
+}
+.write_form .input_div .checkbox_wrap .checkbox_label::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    margin-top: -9px;
+    border: 1px solid #2e3233;
+    box-sizing: border-box;
+}
+.checkbox_wrap input:checked+.checkbox_label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 4px;
+    width: 10px;
+    height: 10px;
+    margin-top: -5px;
+    background-color: #e95c20;
+}
+.write_form .input_div .file_box {
+    position: relative;
+    width: 614px;
+    height: 32px;
+    padding: 0 12px;
+    border: 1px solid #c2c1c1;
+    box-sizing: border-box;
+}
+.write_form .input_div .file_box input[type="file"] {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+.write_form .input_div .file_name {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0 100px 0 12px;
+    line-height: 30px;
+    overflow: hidden;
+    font-size: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.write_form .input_div .file_label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 12px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #2e3233;
+}
+.contents .btn_wrap {
+    display: flex;
+    justify-content: center;
+}
+.contents .btn_wrap button {
+    width: 108px;
+    height: 40px;
+    margin: 0 3px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #999797;
+    border-radius: 6px;
+} 
+.contents .btn_wrap button.submit {
+    background-color: #e95c20;
+}

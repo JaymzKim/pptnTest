@@ -1,0 +1,77 @@
+.header {
+    width: 100%;
+}
+.header .header_bar {
+    height: 24px;
+    background-color: #555;
+}
+.header .gnb_wrap {
+    position: relative;
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 47px 16px 0;
+}
+.header .gnb_wrap::after {
+    content: "";
+    position: absolute;
+    right: 16px;
+    bottom: 0;
+    left: 16px;
+    height: 1px;
+    background-color: #ebeaea;
+}
+.header .gnb_wrap .home_link {
+    position: absolute;
+    top: 8px;
+    left: 15px;
+    width: 78px;
+    height: 34px;
+    font-size: 0;
+    background-image: url(../public/images/pptn_gnb_logo_01.svg);
+    background-size: 78px 34px;
+}
+.header .gnb_wrap .logout {
+    position: absolute;
+    top: 10px;
+    right: 11px;
+    width: 30px;
+    height: 30px;
+}
+.header .gnb_wrap .logout i {
+    display: block;
+    width: 22px;
+    height: 22px;
+    font-size: 0;
+    background-image: url(../public/images/gnb_btn_logout_01.svg);
+}
+.header .gnb_wrap .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 48px;
+}
+.header .gnb_wrap .menu li {
+    position: relative;
+    flex: 1;
+}
+.header .gnb_wrap .menu li[aria-selected="true"]::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: #e95c20;
+}
+.header .gnb_wrap .menu .link {
+    display: block;
+    padding: 12px 0;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+}
+.header .gnb_wrap .menu li[aria-selected="true"] .link {
+    color: #e95c20;
+    font-weight: 700;
+}

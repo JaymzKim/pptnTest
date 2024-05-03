@@ -1,0 +1,99 @@
+.login_wrap {
+    height: 100%;
+    padding-bottom: 52px;
+}
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container h1 {
+    width: 86px;
+    height: 105px;
+    font-size: 0;
+    background-image: url(../public/images/pptn_logo_01.svg);
+    background-size: cover;
+}
+.container .content {
+    margin-top: 30px;
+}
+.container .content .input_box {
+    display: table;
+    table-layout: fixed;
+    width: 280px;
+    height: 56px;
+    padding: 13px 12px;
+    border: 1px solid #c2c1c1;
+    border-radius: 6px;
+}
+.container .content .input_box+.input_box {
+    margin-top: 6px;
+}
+.container .content .input_box .icon_cell {
+    display: table-cell;
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+}
+.container .content .input_box .icon_cell i {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(../public/images/login_icon_id_01.svg);
+}
+.container .content .input_box .icon_cell i[aria-label="비밀번호"] {
+    background-image: url(../public/images/login_icon_pw_01.svg);
+}
+.container .content .input_box input {
+    display: table-cell;
+    width: 214px;
+    margin-top: 4px;
+    padding: 0 0 0 12px;
+    line-height: 24px;
+    text-align: right;
+    vertical-align: middle;
+    font-size: 16px;
+    font-weight: 400;
+    border: 0;
+}
+.container .content .btn_wrap {
+    margin-top: 20px;
+}
+.container .content .btn_wrap button {
+    width: 100%;
+    height: 44px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #e95c20;
+    border: none;
+    border-radius: 6px;
+}
+
+@media (min-width:640px) {
+    .container h1 {
+        width: 125px;
+        height: 150px;
+    }
+    .container .content .input_box {
+        width: 510px;
+        height: 60px;
+        padding: 15px 16px;
+    }
+    .container .content .input_box+.input_box {
+        margin-top: 10px;
+    }
+    .container .content .input_box input {
+        width: 426px;
+        font-size: 22px;
+    }
+    .container .content .btn_wrap {
+        margin-top: 30px;
+    }
+    .container .content .btn_wrap button {
+        height: 70px;
+        font-size: 26px;
+    }
+}

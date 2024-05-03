@@ -1,0 +1,69 @@
+.search_wrap {
+    padding: 20px 16px;
+}
+.search_wrap .search_type {
+    display: flex;
+}
+.search_wrap .search_type .radiobox_wrap:not(:first-child) {
+    margin-left: 10px;
+}
+.search_wrap .search_type .radiobox_wrap input {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+.search_wrap .search_type .radiobox_wrap .radio_label {
+    position: relative;
+    padding-left: 19px;
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.search_wrap .search_type .radiobox_wrap .radio_label::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    margin-top: -7px;
+    border: 1px solid #2e3233;
+    border-radius: 100%;
+    box-sizing: border-box;
+}
+.radiobox_wrap input:checked+.radio_label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 4px;
+    width: 6px;
+    height: 6px;
+    margin-top: -3px;
+    background-color: #e95c20;
+    border-radius: 100%;
+}
+.search_wrap .inputbox_wrap {
+    position: relative;
+    margin-top: 10px;
+    padding: 16px 60px 16px 12px;
+    border: 1px solid #c2c1c1;
+    border-radius: 6px;
+}
+.search_wrap .inputbox_wrap input {
+    width: 100%;
+    height: 24px;
+    font-size: 16px;
+}
+.search_wrap .inputbox_wrap .search_btn {
+    position: absolute;
+    top: 50%;
+    right: 17px;
+    width: 22px;
+    height: 22px;
+    margin-top: -11px;
+    font-size: 0;
+    background-image: url(../public/images/search_icon_01.svg);
+}

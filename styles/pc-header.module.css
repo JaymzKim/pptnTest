@@ -1,0 +1,67 @@
+.header {
+    display: flex;
+    justify-content: center;
+    min-width: 1260px;
+    height: 88px;
+    background-color: #fff;
+    border-bottom: 1px solid #ebeaea;
+}
+.header_wrap {
+    position: relative;
+    display: flex;
+    width: 1260px;
+}
+.header_wrap .home_link {
+    position: absolute;
+    top: 16px;
+    left: 3px;
+    width: 130px;
+    height: 57px;
+    font-size: 0;
+    background-image: url(../public/images/pptn_gnb_logo_01.svg);
+}
+.header_wrap .gnb_wrap {
+    padding: 12px 150px;
+}
+.header_wrap .gnb_wrap .menu {
+    display: flex;
+}
+.header_wrap .gnb_wrap .menu .link {
+    display: block;
+    padding: 20px;
+    line-height: 24px;
+    font-size: 24px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.header_wrap .gnb_wrap .menu .link:hover, .header_wrap .gnb_wrap .menu [aria-selected="true"] .link {
+    font-weight: 700;
+}
+.header_wrap .user_section {
+    position: absolute;
+    top: 30px;
+    right: 3px;
+    display: flex;
+    line-height: 28px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.header_wrap .user_section .logout {
+    width: 28px;
+    height:28px;
+}
+.header_wrap .user_section .logout i {
+    display: block;
+    width: 20px;
+    height: 26px;
+    font-size: 0;
+    background-image: url(../public/images/gnb_btn_logout_01.svg);
+    background-size: 20px 26px;
+}
+.header_wrap .user_section .photo {
+    width: 28px;
+    height: 28px;
+    margin: 0 6px;
+    background: url(../public/images/pptn_gnb_user_01.svg) center center no-repeat;
+    background-size: 23px 26px;
+}
